@@ -12,6 +12,12 @@ Individual games, artwork, trademarks, and connected services have their own own
 
 For substantial changes to YukiOS, use its original source repository and development guide. The imported assets here are a compiled deployment snapshot.
 
+## New Discoveries
+
+Twelve creator-hosted games are added through [extra-games.js](extra-games.js). Open **New Games · 12** on the desktop or the **New Discoveries** library collection. The responsive [browse page](discover.html) supports search and genre filters. CrossCode and shapez are official demos; Mindustry Classic and ASCII Patrol are desktop games with web editions. Other entries are browser-native games. All games load directly from their providers through the local launcher; no executables, ROMs, or game assets are redistributed. The cards use our own SVG artwork, and every entry includes a creator/source link.
+
+To change the selection, edit the data in extra-games.js. After replacing the upstream compiled build, rerun work/add-discoveries.cjs from the parent workspace to reapply the four guarded integration hooks. Check both the library collection and discover.html after updates.
+
 ## First version, preserved at classic.html
 
 An original browser desktop built with plain HTML, CSS, and JavaScript. Rename it in Settings whenever you like.

@@ -10,7 +10,8 @@
     "Use a local direct-embed game launcher without proxy forwarding",
     "Link feature information to credits",
     "Add visible creator credit and credits page",
-    "Retain first version at classic.html"
+    "Retain first version at classic.html",
+    "Add local curated game catalog, descriptions, and New Discoveries collection"
   ],
   "assets": [
     {

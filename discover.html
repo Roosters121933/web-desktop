@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#10151e"><title>New Discoveries · Your Desktop</title><link rel="stylesheet" href="./discover.css"></head>
+<body>
+  <header><a class="brand" href="./">◈ <span>Your Desktop</span></a><nav><a class="active" href="./discover.html">New Discoveries</a><a href="./">Back to Desktop ↗</a></nav></header>
+  <main>
+    <section class="hero"><div><p class="eyebrow">THE LIBRARY / FRESH FINDS</p><h1>Your next<br><span>great game.</span></h1><p class="intro">Factories, fast tracks, faraway worlds.<br>12 handpicked games from their creators’ websites.</p></div><div class="hero-orbit" aria-hidden="true"><i></i><b>✦</b><span>EXPLORE · BUILD · PLAY</span></div></section>
+    <div class="collection-heading"><div><p class="eyebrow">READY WHEN YOU ARE</p><h2>New Discoveries <small>12</small></h2></div><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search these games…" aria-label="Search new games"></label></div>
+    <div class="filters" role="group" aria-label="Filter games"><button class="selected" data-filter="all" aria-pressed="true">All Games</button><button data-filter="pc" aria-pressed="false">PC Web Editions</button><button data-filter="Action" aria-pressed="false">Action</button><button data-filter="Strategy" aria-pressed="false">Strategy & Building</button><button data-filter="Arcade" aria-pressed="false">Arcade</button><button data-filter="other" aria-pressed="false">Racing & Sandbox</button></div>
+    <p id="result-count" class="result-count" aria-live="polite">12 games</p><section id="games" class="game-grid" aria-label="Game cards"></section><p id="empty" hidden>No games match that search. Try another name or category.</p>
+    <footer>Games run on their creators’ servers. Demos and classic editions are labeled. <a href="./credits.html">Credits</a></footer>
+  </main>
+  <dialog id="player"><div class="player-bar"><div><strong id="player-title"></strong><p id="player-controls"></p></div><button id="close-player" aria-label="Close game">✕</button></div><div id="game-host"></div></dialog>
+  <script type="module" src="./discover.js"></script>
+</body></html>
