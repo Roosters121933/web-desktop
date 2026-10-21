@@ -6,6 +6,8 @@ The copied build is already compiled. Publish this folder with GitHub Pages from
 
 We adapted asset and preload URLs for GitHub Pages, removed the original deployment's Cloudflare beacon, disabled its original automatic service worker registration, and added a visible creator-credit link. The import is recorded in [YUKIOS-IMPORT.json](YUKIOS-IMPORT.json). Offline operation is not promised.
 
+The local `game-launcher.html` launcher embeds the selected HTTPS game directly. It does not use the upstream proxy or forward navigation targets to another helper service. Games that refuse embedding can open through its direct link. Some upstream proxy-dependent apps therefore have limited functionality in this edition.
+
 Individual games, artwork, trademarks, and connected services have their own owners and licenses. The YukiOS MIT license does not grant rights to the games listed in the catalog. The library loads games from external providers. No game archives, ROMs, or commercial game binaries are included here. Not every listed app or title has been tested. This project is not affiliated with Valve or Steam.
 
 For substantial changes to YukiOS, use its original source repository and development guide. The imported assets here are a compiled deployment snapshot.

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>Game launcher</title><style>html,body{margin:0;height:100%;background:#101821;color:#dae6ef;font:12px system-ui,sans-serif}body{display:flex;flex-direction:column}.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:9px 14px;border-bottom:1px solid #ffffff20;background:#192634;flex-shrink:0}.bar span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}a{color:#9dd9ff;white-space:nowrap}iframe{width:100%;flex:1;border:0;background:#101821;min-height:0}#error{padding:24px;line-height:1.8}button{font:inherit;color:#d8e5ef;background:#ffffff12;border:1px solid #ffffff30;border-radius:5px;padding:5px 9px;cursor:pointer}[hidden]{display:none!important}</style></head><body><div class="bar"><span id="status">Opening game…</span><button id="reload" hidden>Reload</button><a id="external" target="_blank" rel="noopener noreferrer" hidden>Open in new tab ↗</a></div><p id="error" hidden></p><script>
+(() => {
+  const status = document.getElementById('status');
+  const link = document.getElementById('external');
+  const reload = document.getElementById('reload');
+  const error = document.getElementById('error');
+  try {
+    const input = new URLSearchParams(location.search).get('target');
+    if (!input) throw new Error('No game address was provided. Return to the library and choose a game.');
+    const target = new URL(input);
+    if (target.protocol !== 'https:' || target.username || target.password) throw new Error('This launcher requires an HTTPS game address without sign-in details.');
+    if (target.origin === location.origin) throw new Error('Open this desktop in its own tab.');
+    link.href = target.href;
+    link.hidden = false;
+    status.textContent = 'If the preview stays blank, open the game in a new tab.';
+    const frame = document.createElement('iframe');
+    frame.title = 'Game from ' + target.hostname;
+    frame.referrerPolicy = 'no-referrer';
+    frame.setAttribute('sandbox', 'allow-scripts allow-forms allow-same-origin allow-popups allow-pointer-lock allow-downloads');
+    frame.setAttribute('allow', 'fullscreen; gamepad; autoplay');
+    frame.src = target.href;
+    document.body.append(frame);
+    reload.hidden = false;
+    reload.addEventListener('click', () => { frame.src = target.href; });
+  } catch (problem) {
+    status.textContent = 'Game could not open';
+    error.textContent = problem.message;
+    error.hidden = false;
+  }
+})();
+</script></body></html>
