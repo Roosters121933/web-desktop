@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#081221">
+  <meta name="description" content="Your own little corner of the web. Games, notes, and a desktop you can make yours.">
+  <title>Your Desktop</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./core.js" defer></script>
+  <script src="./games.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="wallpaper" aria-hidden="true"><div class="orbital-ring ring-one"></div><div class="orbital-ring ring-two"></div><div class="planet"></div><div class="grain"></div></div>
+  <header class="topbar">
+    <button id="brand" class="brand" aria-label="Open app launcher"><span class="brand-symbol">✳</span><span id="desktop-name">YOUR DESKTOP</span></button>
+    <span class="topbar-center">A little space of your own.</span>
+    <div class="system-status"><span class="online-dot"></span><span class="local-label">All systems go</span><button id="clock" title="Open settings"></button></div>
+  </header>
+  <main id="desktop" aria-label="Desktop">
+    <nav id="shortcuts" class="shortcuts" aria-label="Desktop apps"></nav>
+    <section class="welcome" id="welcome">
+      <div class="eyebrow"><span></span> MAKE YOURSELF AT HOME</div>
+      <h1>Your world.<br>Your rules.</h1>
+      <p>Play something. Make something.<br>See where the next click takes you.</p>
+      <button class="primary pill" data-open="games">Explore games <span>↗</span></button>
+      <div class="welcome-meta"><span>01 / YOUR NEXT CHAPTER</span><span>✧</span></div>
+    </section>
+    <aside class="desktop-widget" aria-label="Quick start">
+      <div class="widget-label">ON YOUR RADAR <span>↗</span></div>
+      <button class="featured-game" data-game="starfall"><span class="mini-orbit">✦</span><span><small>READY FOR TAKEOFF?</small><strong>Starfall</strong><small>An endless space run.</small></span><b>→</b></button>
+      <div class="widget-footer"><span>3 original games. Zero installs.</span><span class="online-dot"></span></div>
+    </aside>
+    <div id="window-layer"></div>
+  </main>
+  <section id="launcher" class="launcher" aria-label="App launcher" hidden>
+    <div class="launcher-heading"><strong>Your space</strong><button id="close-launcher" class="icon-btn" aria-label="Close launcher">×</button></div>
+    <label class="search-box"><span>⌕</span><input id="app-search" placeholder="Find an app or game…" autocomplete="off"></label>
+    <div id="launcher-grid" class="launcher-grid"></div><p id="search-empty" hidden>No matches. Try “games” or “notes”.</p>
+    <footer>Built to be yours. <span>✧</span></footer>
+  </section>
+  <footer class="dock-wrap"><nav id="dock" class="dock" aria-label="Dock"><button id="launcher-button" class="dock-launcher" aria-label="Open app launcher" title="Apps">✳</button><span class="dock-divider"></span></nav><div class="dock-caption">A SPACE FOR THE CURIOUS</div></footer>
+  <div id="toast" role="status" hidden></div>
+</body>
+</html>
