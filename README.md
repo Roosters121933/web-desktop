@@ -1,4 +1,16 @@
-# Your Desktop — working title
+# Your Desktop: YukiOS Edition
+
+The current home page uses the YukiOS browser desktop and game library created by **Reeyuki and the YukiOS contributors**. Original source: https://github.com/Reeyuki/YukiOS . MIT license, Copyright (c) 2026 YukiOS. See [LICENSE-YukiOS.txt](LICENSE-YukiOS.txt) and [credits.html](credits.html).
+
+The copied build is already compiled. Publish this folder with GitHub Pages from **main / (root)**, or serve it with a static web server. Click the lock screen, sign in as Guest, complete or skip optional setup, and open **Yuki Steam → Library**.
+
+We adapted asset and preload URLs for GitHub Pages, removed the original deployment's Cloudflare beacon, disabled its original automatic service worker registration, and added a visible creator-credit link. The import is recorded in [YUKIOS-IMPORT.json](YUKIOS-IMPORT.json). Offline operation is not promised.
+
+Individual games, artwork, trademarks, and connected services have their own owners and licenses. The YukiOS MIT license does not grant rights to the games listed in the catalog. The library loads games from external providers. No game archives, ROMs, or commercial game binaries are included here. Not every listed app or title has been tested. This project is not affiliated with Valve or Steam.
+
+For substantial changes to YukiOS, use its original source repository and development guide. The imported assets here are a compiled deployment snapshot.
+
+## First version, preserved at classic.html
 
 An original browser desktop built with plain HTML, CSS, and JavaScript. Rename it in Settings whenever you like.
 

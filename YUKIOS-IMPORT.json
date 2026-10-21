@@ -1,0 +1,139 @@
+{
+  "sourceRepository": "https://github.com/Reeyuki/YukiOS",
+  "sourceDeployment": "https://yukios.netlify.app/",
+  "importedAt": "2026-10-21T22:12:15.102Z",
+  "changes": [
+    "Use relative asset URLs for GitHub Pages subdirectories",
+    "Remove original deployment Cloudflare beacon",
+    "Disable automatic registration of the original deployment service worker",
+    "Add visible creator credit and credits page",
+    "Retain first version at classic.html"
+  ],
+  "assets": [
+    {
+      "file": "assets/logo.BTp81O8a.png",
+      "bytes": 50184,
+      "upstream": "https://yukios.netlify.app/assets/logo.BTp81O8a.png"
+    },
+    {
+      "file": "assets/index.CRaPTikk.css",
+      "bytes": 1058383,
+      "upstream": "https://yukios.netlify.app/assets/index.CRaPTikk.css"
+    },
+    {
+      "file": "assets/index.CJZ7dzK1.js",
+      "bytes": 3887071,
+      "upstream": "https://yukios.netlify.app/assets/index.CJZ7dzK1.js"
+    },
+    {
+      "file": "assets/liveStats.D00fcU7A.js",
+      "bytes": 1732,
+      "upstream": "https://yukios.netlify.app/assets/liveStats.D00fcU7A.js"
+    },
+    {
+      "file": "assets/office.SUbm4hM0.css",
+      "bytes": 12064,
+      "upstream": "https://yukios.netlify.app/assets/office.SUbm4hM0.css"
+    },
+    {
+      "file": "assets/liveStats.DD_h1DZF.css",
+      "bytes": 1685,
+      "upstream": "https://yukios.netlify.app/assets/liveStats.DD_h1DZF.css"
+    },
+    {
+      "file": "assets/donationPopup.XBpxl_86.js",
+      "bytes": 3191,
+      "upstream": "https://yukios.netlify.app/assets/donationPopup.XBpxl_86.js"
+    },
+    {
+      "file": "assets/papirus-available.json.CyC9ia09.gz",
+      "bytes": 1373,
+      "upstream": "https://yukios.netlify.app/assets/papirus-available.json.CyC9ia09.gz"
+    },
+    {
+      "file": "assets/papirus-symlinks.json.DkjegFZf.gz",
+      "bytes": 526,
+      "upstream": "https://yukios.netlify.app/assets/papirus-symlinks.json.DkjegFZf.gz"
+    },
+    {
+      "file": "assets/donationPopup.CxjPpux4.css",
+      "bytes": 3245,
+      "upstream": "https://yukios.netlify.app/assets/donationPopup.CxjPpux4.css"
+    },
+    {
+      "file": "assets/room3d.BELE7Y5z.css",
+      "bytes": 2856,
+      "upstream": "https://yukios.netlify.app/assets/room3d.BELE7Y5z.css"
+    },
+    {
+      "file": "assets/_commonjsHelpers.BcI26Yii.js",
+      "bytes": 2047,
+      "upstream": "https://yukios.netlify.app/assets/_commonjsHelpers.BcI26Yii.js"
+    },
+    {
+      "file": "assets/papirus-available.BDwXXqzD.json",
+      "bytes": 9823,
+      "upstream": "https://yukios.netlify.app/assets/papirus-available.BDwXXqzD.json"
+    },
+    {
+      "file": "assets/papirus-symlinks.DHt1AteF.json",
+      "bytes": 1333,
+      "upstream": "https://yukios.netlify.app/assets/papirus-symlinks.DHt1AteF.json"
+    },
+    {
+      "file": "assets/index.CiKJUfi0.js",
+      "bytes": 1201,
+      "upstream": "https://yukios.netlify.app/assets/index.CiKJUfi0.js"
+    },
+    {
+      "file": "assets/office.CDDA0LHH.js",
+      "bytes": 64966,
+      "upstream": "https://yukios.netlify.app/assets/office.CDDA0LHH.js"
+    },
+    {
+      "file": "assets/deckPerfHud.GLl-lCjJ.js",
+      "bytes": 3125,
+      "upstream": "https://yukios.netlify.app/assets/deckPerfHud.GLl-lCjJ.js"
+    },
+    {
+      "file": "assets/accountSwitcher.BM36FhtQ.js",
+      "bytes": 3407,
+      "upstream": "https://yukios.netlify.app/assets/accountSwitcher.BM36FhtQ.js"
+    },
+    {
+      "file": "assets/index.DNQA3uXP.js",
+      "bytes": 17693,
+      "upstream": "https://yukios.netlify.app/assets/index.DNQA3uXP.js"
+    },
+    {
+      "file": "assets/index.hRYOR9RR.js",
+      "bytes": 19176,
+      "upstream": "https://yukios.netlify.app/assets/index.hRYOR9RR.js"
+    },
+    {
+      "file": "assets/marked.esm.eXxjURbE.js",
+      "bytes": 41246,
+      "upstream": "https://yukios.netlify.app/assets/marked.esm.eXxjURbE.js"
+    },
+    {
+      "file": "assets/index.C6LcN0Kb.js",
+      "bytes": 265842,
+      "upstream": "https://yukios.netlify.app/assets/index.C6LcN0Kb.js"
+    },
+    {
+      "file": "assets/eruda.CjjWahpN.js",
+      "bytes": 505418,
+      "upstream": "https://yukios.netlify.app/assets/eruda.CjjWahpN.js"
+    },
+    {
+      "file": "assets/room3d.DJWq_Z_5.js",
+      "bytes": 1018112,
+      "upstream": "https://yukios.netlify.app/assets/room3d.DJWq_Z_5.js"
+    },
+    {
+      "file": "assets/TransformControls.Bn-PL7qp.js",
+      "bytes": 20575,
+      "upstream": "https://yukios.netlify.app/assets/TransformControls.Bn-PL7qp.js"
+    }
+  ]
+}
