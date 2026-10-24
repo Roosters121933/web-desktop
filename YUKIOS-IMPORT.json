@@ -11,7 +11,9 @@
     "Link feature information to credits",
     "Add visible creator credit and credits page",
     "Retain first version at classic.html",
-    "Add local curated game catalog, descriptions, and New Discoveries collection"
+    "Remove twelve-game discovery collection and clean its saved collections",
+    "Retain licensed desktop at desktop.html beneath an original hybrid home",
+    "Add restricted same-origin app-launch bridge"
   ],
   "assets": [
     {

@@ -1,22 +1,24 @@
-# Your Desktop: YukiOS Edition
+# Your Desktop: Hybrid Home
 
-The current home page uses the YukiOS browser desktop and game library created by **Reeyuki and the YukiOS contributors**. Original source: https://github.com/Reeyuki/YukiOS . MIT license, Copyright (c) 2026 YukiOS. See [LICENSE-YukiOS.txt](LICENSE-YukiOS.txt) and [credits.html](credits.html).
+The home page is an original dashboard with a live clock, three switchable scenes, app/game search, recent launches, a dock, and a direct web-search link. It connects to the existing MIT-licensed YukiOS desktop at [desktop.html](desktop.html), which provides the game library, apps, and window management. No CineOS code, artwork, or game collection has been copied or embedded. The CineOS card opens the original site in a separate tab because its proprietary license forbids copying, modification, and framing.
 
-The copied build is already compiled. Publish this folder with GitHub Pages from **main / (root)**, or serve it with a static web server. Click the lock screen, sign in as Guest, complete or skip optional setup, and open **Yuki Steam → Library**.
+The twelve-game New Discoveries collection was removed at the owner's request. Its catalog is empty, its old browse URL returns home, and stale saved collections are cleaned when the Yuki library opens. Other saved games and settings are retained.
 
-We adapted asset and preload URLs for GitHub Pages, removed the original deployment's Cloudflare beacon, disabled its original automatic service worker registration, and added a visible creator-credit link. The import is recorded in [YUKIOS-IMPORT.json](YUKIOS-IMPORT.json). Offline operation is not promised.
+## Files and integration
 
-The local `game-launcher.html` launcher embeds the selected HTTPS game directly. It does not use the upstream proxy or forward navigation targets to another helper service. Games that refuse embedding can open through its direct link. Some upstream proxy-dependent apps therefore have limited functionality in this edition.
+- index.html, hybrid.css, hybrid.js: original home and launchpad
+- hybrid-bridge.js: same-origin, same-window message bridge and retired-collection cleanup
+- library-index.json: search index of existing Yuki titles, generated from the imported upstream gamesList.js
+- desktop.html and assets/: compiled YukiOS workspace, with creator credit and MIT notice retained
+- game-launcher.html: existing direct HTTPS game preview with a new-tab fallback; no proxy forwarding
 
-Individual games, artwork, trademarks, and connected services have their own owners and licenses. The YukiOS MIT license does not grant rights to the games listed in the catalog. The library loads games from external providers. No game archives, ROMs, or commercial game binaries are included here. Not every listed app or title has been tested. This project is not affiliated with Valve or Steam.
+The workspace loads only when opened. Sign in as Guest there; a queued launch runs once the session is ready. Returning Home keeps the workspace loaded. App requests are limited to registered game IDs and a fixed set of system apps. Bridge messages require the exact parent/child window and matching origin. Home preferences and recent shortcuts are stored on this device. Web searches open DuckDuckGo directly in a new tab.
 
-For substantial changes to YukiOS, use its original source repository and development guide. The imported assets here are a compiled deployment snapshot.
+Publish the root files and updated assets with GitHub Pages from main / (root). No build step is needed to run the site. Do not rerun the old upstream importer without preserving the hybrid bridge hooks and desktop.html. Local source preparation is recorded in work/prepare-hybrid.cjs and work/build-hybrid-index.cjs in the parent workspace.
 
-## New Discoveries
+## Attribution
 
-Twelve creator-hosted games are added through [extra-games.js](extra-games.js). Open **New Games · 12** on the desktop or the **New Discoveries** library collection. The responsive [browse page](discover.html) supports search and genre filters. CrossCode and shapez are official demos; Mindustry Classic and ASCII Patrol are desktop games with web editions. Other entries are browser-native games. All games load directly from their providers through the local launcher; no executables, ROMs, or game assets are redistributed. The cards use our own SVG artwork, and every entry includes a creator/source link.
-
-To change the selection, edit the data in extra-games.js. After replacing the upstream compiled build, rerun work/add-discoveries.cjs from the parent workspace to reapply the four guarded integration hooks. Check both the library collection and discover.html after updates.
+YukiOS by Reeyuki and contributors: https://github.com/Reeyuki/YukiOS . MIT license, Copyright (c) 2026 YukiOS. See LICENSE-YukiOS.txt and credits.html. Individual games and connected services retain their own owners and terms; the desktop license is not a license to their content. The game library continues loading its existing external providers. No game archives, ROMs, or commercial binaries have been added. This site is not affiliated with CineOS, Valve, or Steam.
 
 ## First version, preserved at classic.html
 
